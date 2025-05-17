@@ -1,0 +1,77 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0abb26;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background: linear-gradient(to right, #f1f1f1, #fff);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  color: #0abb26;
+}
+footer {
+  background: #0abb26;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cert-grid img {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: white;
+}
+
+.center-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  background: #0abb26;
+}
+.site-name {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+nav {
+  background: #0abb26;
+}
