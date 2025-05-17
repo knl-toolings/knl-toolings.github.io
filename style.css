@@ -75,3 +75,21 @@ footer {
 nav {
   background: #0abb26;
 }
+
+
+/* Language Selection Buttons */
+.lang-btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #0abb26;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.lang-btn:hover {
+  background: #08931f;
+}
