@@ -10,7 +10,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #0abb26;
+  background: #1a3e62;
 }
 .logo {
   height: 50px;
@@ -36,10 +36,10 @@ section {
   margin: auto;
 }
 h2 {
-  color: #0abb26;
+  color: #1a3e62;
 }
 footer {
-  background: #0abb26;
+  background: #1a3e62;
   color: #000000;
   text-align: center;
   padding: 1rem;
@@ -65,7 +65,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1rem 0;
-  background: #0abb26;
+  background: #1a3e62;
 }
 .site-name {
   color: #000000;
@@ -73,7 +73,7 @@ footer {
   margin-top: 0.5rem;
 }
 nav {
-  background: #0abb26;
+  background: #1a3e62;
 }
 
 
@@ -83,7 +83,7 @@ nav {
   margin: 1rem;
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  background: #0abb26;
+  background: #1a3e62;
   color: white;
   border-radius: 10px;
   text-decoration: none;
@@ -91,5 +91,17 @@ nav {
   transition: background 0.3s;
 }
 .lang-btn:hover {
-  background: #08931f;
+  background: #154061;
+}
+
+
+.center-header h1,
+nav a,
+footer,
+.lang-btn {
+  color: white !important;
+}
+
+.site-name {
+  color: white !important;
 }
