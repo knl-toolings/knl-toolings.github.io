@@ -10,13 +10,30 @@
 <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="lang-select" style="text-align:center; margin-top: 2rem;">
-<h2>🌐 LANGUAGE</h2>
-<a class="lang-btn" href="index.html">🇰🇷 KOREAN</a>
-<a class="lang-btn" href="en/index.html">🇺🇸 ENGLISH</a>
-<a class="lang-btn" href="jp/index.html">🇯🇵 JAPANESE</a>
-</div>
-<header><div class="container center-header"><img alt="K&amp;L 로고" class="logo" src="logo.png"/><h1 class="site-name">K&amp;L Toolings (케이엔엘)</h1></div><nav><ul><li><a href="#about">회사소개</a></li><li><a href="#tech">보유기술</a></li><li><a href="#parts">주요 부품</a></li><li><a href="#works">실적</a></li><li><a href="#contact">문의</a></li><li><a href="#map">찾아오시는 길</a></li></ul></nav></header>
+
+
+<!-- Fixed top navbar with hamburger -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <img src="logo.png" class="logo" alt="K&L Toolings">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="#about">회사소개</a></li>
+      <li><a href="#tech">보유기술</a></li>
+      <li><a href="#parts">주요 부품</a></li>
+      <li><a href="#works">실적</a></li>
+      <li><a href="#contact">문의</a></li>
+      <li><a href="#map">오시는 길</a></li>
+    </ul>
+    <div class="lang-buttons">
+      <a href="index.html">🇰🇷</a>
+      <a href="en/index.html">🇺🇸</a>
+      <a href="jp/index.html">🇯🇵</a>
+    </div>
+  </div>
+</nav>
+
 <section class="hero">
 <h1>정밀 설계와 신뢰를 바탕으로 성장하는 기업</h1>
 </section>

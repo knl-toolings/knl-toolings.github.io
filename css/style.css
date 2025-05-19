@@ -1,0 +1,220 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #1a3e62;
+}
+.logo {
+  height: 50px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+.hero {
+  background: linear-gradient(to right, #f1f1f1, #fff);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  color: #1a3e62;
+}
+footer {
+  background: #1a3e62;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.cert-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cert-grid img {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: white;
+}
+
+.center-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  background: #1a3e62;
+}
+.site-name {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+nav {
+  background: #1a3e62;
+}
+
+
+/* Language Selection Buttons */
+.lang-btn {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: #1a3e62;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.lang-btn:hover {
+  background: #154061;
+}
+
+
+.center-header h1,
+nav a,
+footer,
+.lang-btn {
+  color: white !important;
+}
+
+.site-name {
+  color: white !important;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#map {
+  font-size: 0.9rem;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+#map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .cert-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  section {
+    padding: 20px 15px;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  #map iframe {
+    height: 200px;
+  }
+
+  .cert-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1a3e62;
+  color: white;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.logo {
+  height: 40px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.lang-buttons a {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-left: auto;
+  color: white;
+}
+#menu-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: #1a3e62;
+  }
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+}
