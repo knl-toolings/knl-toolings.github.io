@@ -16,7 +16,8 @@
 <a class="lang-btn" href="en/index.html">🇺🇸 ENGLISH</a>
 <a class="lang-btn" href="jp/index.html">🇯🇵 JAPANESE</a>
 </div>
-<header><div class="container center-header"><img alt="K&amp;L 로고" class="logo" src="logo.png"/><h1 class="site-name">케이엔엘 (K&amp;L Toolings)</h1></div><nav><ul><li><a href="#about">회사소개</a></li><li><a href="#tech">보유기술</a></li><li><a href="#parts">주요 부품</a></li><li><a href="#works">실적</a></li><li><a href="#contact">문의</a></li><li><a href="#map">찾아오시는 길</a></li></ul></nav></header>
+<header><div class="container center-header"><img alt="K&amp;L 로고" class="logo" src="logo.png"/><h1 class="site-name">K&amp;L Toolings (케이엔엘)</h1></div><div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<nav class="mobile-nav"><ul><li><a href="#about">회사소개</a></li><li><a href="#tech">보유기술</a></li><li><a href="#parts">주요 부품</a></li><li><a href="#works">실적</a></li><li><a href="#contact">문의</a></li><li><a href="#map">찾아오시는 길</a></li></ul></nav></header>
 <section class="hero">
 <h1>정밀 설계와 신뢰를 바탕으로 성장하는 기업</h1>
 </section>
@@ -79,8 +80,14 @@
 </section><section id="certifications"><h2>인증 및 자격</h2><ul><li>기술보증기금 벤처기업 인증 (2017.03.14 ~ 2019.03.13)</li><li>기술보증기금 벤처기업 인증 (2019.03.14 ~ 2021.03.13)</li></ul><div class="certificate-gallery"><img alt="벤처기업확인서 2017-2019" src="certificate_venture_17_19.jpg" style="max-width: 300px; margin: 10px; border: 1px solid #ccc;"/><img alt="벤처기업확인서 2019-2021" src="certificate_venture_19_21.jpg" style="max-width: 300px; margin: 10px; border: 1px solid #ccc;"/></div></section>
 <section id="company-info">
 <h2>회사 정보</h2>
-<p><strong>홈페이지:</strong> <a href="http://www.kn-toolings.co.kr" target="_blank">www.kn-toolings.co.kr</a></p>
-
+<p><strong>홈페이지:</strong> <a href="http://www.knl-toolings.co.kr" target="_blank">www.knl-toolings.co.kr</a></p>
 </section>
-<section id="map"><h2>찾아오시는 길</h2><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.2376!2d129.1240133!3d35.17084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ed8542c3076d%3A0xabc2fa9fa75b10e4!2z67aA7IKw64yA7ZWZ6rWQIOu2gOyaqOuMgOq1rCDsnqXtirjtmZTrj5kgOTk!5e0!3m2!1sko!2skr!4v1682477653540!5m2!1sko!2skr" style="border:0;" width="100%"></iframe></section></body>
+<section id="map"><h2>찾아오시는 길</h2><iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.2376!2d129.1240133!3d35.17084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ed8542c3076d%3A0xabc2fa9fa75b10e4!2z67aA7IKw64yA7ZWZ6rWQIOu2gOyaqOuMgOq1rCDsnqXtirjtmZTrj5kgOTk!5e0!3m2!1sko!2skr!4v1682477653540!5m2!1sko!2skr" style="border:0;" width="100%"></iframe></section>
+<script>
+function toggleMenu() {
+    const nav = document.querySelector('nav.mobile-nav');
+    nav.classList.toggle('active');
+}
+</script>
+</body>
 </html>

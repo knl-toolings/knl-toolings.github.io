@@ -151,3 +151,60 @@ nav a {
     height: auto;
   }
 }
+
+
+/* 햄버거 메뉴 */
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+nav.mobile-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav.mobile-nav {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #123456;
+    }
+    nav.mobile-nav.active {
+        display: flex;
+    }
+}
+
+/* 카드형 실적 섹션 */
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+}
+.cert-item {
+    width: 90%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+    text-align: center;
+}
+.cert-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.cert-item p {
+    padding: 0.5em;
+    font-weight: bold;
+}
