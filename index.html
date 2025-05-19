@@ -8,39 +8,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar-container">
-    <ul class="nav-links">
-      <li><a href="#about">회사소개</a></li>
-      <li><a href="#tech">보유기술</a></li>
-      <li><a href="#parts">주요부품</a></li>
-      <li><a href="#clients">주요거래처</a></li>
-      <li><a href="#works">금형제작실적</a></li>
-      <li><a href="#certs">인증</a></li>
-      <li><a href="#map">오시는길</a></li>
-      <li><a href="#contact">문의</a></li>
-    </ul>
-    <div class="logo" style="margin-left:auto;text-align:center;">
-      <img src="logo.png" alt="K&L Toolings 로고" style="max-height:40px;">
+  <header>
+    <div class="logo-center">
+      <img src="logo.png" alt="K&L Toolings 로고">
     </div>
-  </nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="main-nav">
+      <ul class="nav-links">
+        <li><a href="#about">회사소개</a></li>
+        <li><a href="#tech">보유기술</a></li>
+        <li><a href="#parts">주요부품</a></li>
+        <li><a href="#clients">주요거래처</a></li>
+        <li><a href="#works">금형제작실적</a></li>
+        <li><a href="#certs">인증</a></li>
+        <li><a href="#map">오시는길</a></li>
+        <li><a href="#contact">문의</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <section id="about">
-  <img src="office.jpg" alt="회사 전경" style="width:100%;max-width:800px;margin-bottom:1em;border-radius:12px;">
+    <img src="office.jpg" alt="회사 전경" style="width:100%;max-width:800px;margin-bottom:1em;border-radius:12px;">
     <h2>회사소개</h2>
     <p>K&L Toolings는 2010년에 설립된 금형 설계 전문 기업으로...</p>
   </section>
-
   <section id="tech">
-  <img src="자동차_부품_웹용.jpg" alt="자동차 부품 기술" style="width:100%;max-width:800px;margin-bottom:1em;border-radius:12px;">
+    <img src="자동차_부품_웹용.jpg" alt="자동차 부품 기술" style="width:100%;max-width:800px;margin-bottom:1em;border-radius:12px;">
     <h2>보유기술 및 장비</h2>
     <p>CAD 설계, 3D 스캐닝, 성형 해석 등 다양한 기술력 보유</p>
   </section>
-
   <section id="parts">
     <h2>주요 부품</h2>
     <p>FRT DOOR INR, FRT DR HINGE, FMC CHECK 등</p>
   </section>
-
   <section id="clients">
     <h2>주요 거래처</h2>
     <ul>
@@ -49,36 +50,34 @@
       <li>ROYAL_EG, SILLA 등 국내외 고객</li>
     </ul>
   </section>
-
   <section id="works">
-  <div style="display:flex;flex-wrap:wrap;gap:1em;margin-bottom:1em;">
-    <img src="frt_dr_hinge.png" style="width:30%;min-width:180px;">
-    <img src="FMC-CHECK.png" style="width:30%;min-width:180px;">
-  </div>
+    <div style="display:flex;flex-wrap:wrap;gap:1em;margin-bottom:1em;">
+      <img src="frt_dr_hinge.png" style="width:30%;min-width:180px;">
+      <img src="FMC-CHECK.png" style="width:30%;min-width:180px;">
+    </div>
     <h2>금형 제작 실적</h2>
     <p>다수의 자동차 부품 금형 제작 수행</p>
   </section>
-
   <section id="certs">
-  <div style="display:flex;gap:1em;flex-wrap:wrap;margin-bottom:1em;">
-    <img src="certificate_venture_17_19.jpg" style="width:45%;min-width:180px;">
-    <img src="certificate_venture_19_21.jpg" style="width:45%;min-width:180px;">
-  </div>
+    <div style="display:flex;gap:1em;flex-wrap:wrap;margin-bottom:1em;">
+      <img src="certificate_venture_17_19.jpg" style="width:45%;min-width:180px;">
+      <img src="certificate_venture_19_21.jpg" style="width:45%;min-width:180px;">
+    </div>
     <h2>인증 및 자격</h2>
     <p>벤처기업 인증 (2017~2021)</p>
   </section>
-
-  <section id="map">
-    <h2>찾아오시는 길</h2>
-    <div style="width:100%;height:300px;">
-      <iframe src="https://map.kakao.com/?urlX=502214&urlY=416924&itemId=27095625&q=벽산e센텀클래스원%20508-2"
-        style="width:100%;height:100%;border:0;" allowfullscreen loading="lazy"></iframe>
-    </div>
-    <p style="text-align:center;margin:1em 0;">
-      <a href="https://map.kakao.com/link/to/부산광역시 해운대구 센텀동로 99 벽산e-센텀클래스원 508,35.1706042,129.1271106"
-         target="_blank" class="kakao-btn">카카오맵 길찾기 바로가기</a>
-    </p>
-  </section>
+  
+<section id="map">
+  <h2>찾아오시는 길</h2>
+  <div style="width:100%;height:300px;">
+    <iframe src="https://www.google.com/maps?q=99,+Centum+dong-ro,+Haeundae-gu,+Busan,+Republic+of+Korea&output=embed"
+      style="width:100%;height:100%;border:0;" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <p style="text-align:center;margin:1em 0;">
+    <a href="https://www.google.com/maps/dir/?api=1&destination=99,+Centum+dong-ro,+Haeundae-gu,+Busan"
+       target="_blank" class="kakao-btn">구글맵 길찾기 바로가기</a>
+  </p>
+</section>
 
   <section id="contact">
     <h2>문의</h2>
