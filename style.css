@@ -105,3 +105,9 @@ footer,
 .site-name {
   color: white !important;
 }
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
