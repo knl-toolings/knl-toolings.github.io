@@ -11,102 +11,81 @@
 <body>
 <header>
   <style>
-    .header-top-row {
+    .header-bar-flex {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      align-items: center;
       justify-content: space-between;
       width: 100%;
-      padding: 12px 28px 0 28px;
+      padding: 14px 32px 8px 32px;
       position: relative;
-      z-index: 100;
-    }
-    .logo-center {
-      flex: 1 1 auto;
-      text-align: center;
-      margin-top: 2px;
-    }
-    .logo-center img {
-      max-height: 68px;
-      width: auto;
-      display: inline-block;
     }
     .lang-switch-row {
       display: flex;
       flex-direction: row;
-      gap: 0.7em;
+      gap: 0.65em;
       font-size: 2.1em;
       align-items: center;
+      min-width: 110px;
     }
     .lang-switch-row a {
       text-decoration: none;
-      transition: transform 0.12s;
-      margin-left: 0.07em;
+      transition: transform 0.13s;
     }
     .lang-switch-row a:hover {
-      transform: scale(1.18);
+      transform: scale(1.13);
     }
-    .main-nav {
-      margin-top: 2px;
+    .logo-center {
+      flex: 1 1 auto;
       text-align: center;
+      min-width: 160px;
     }
-    .nav-links {
+    .logo-center img {
+      max-height: 70px;
+      width: auto;
+      display: inline-block;
+    }
+    .menu-box {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 22px;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .nav-links li a {
-      text-decoration: none;
-      font-size: 1.05em;
-      color: #192040;
-      font-weight: 600;
-      transition: color 0.14s;
-    }
-    .nav-links li a:hover {
-      color: #4167dc;
+      align-items: center;
+      font-size: 2.3em;
+      min-width: 40px;
+      justify-content: flex-end;
     }
     @media (max-width: 700px) {
-      .header-top-row {
-        flex-direction: column;
-        align-items: center;
-        padding: 12px 2vw 0 2vw;
-      }
-      .logo-center img {
-        max-height: 42px;
-      }
-      .main-nav {
-        margin-top: 4px;
-      }
-      .nav-links {
-        flex-direction: column;
-        gap: 8px;
+      .header-bar-flex {
+        padding: 7px 6vw 3px 6vw;
       }
       .lang-switch-row {
-        font-size: 1.2em;
-        margin-bottom: 6px;
-        justify-content: flex-end;
-        width: 100%;
+        font-size: 1.1em;
+        min-width: 82px;
+      }
+      .logo-center img {
+        max-height: 40px;
+      }
+      .menu-box {
+        font-size: 1.6em;
       }
     }
   </style>
-
-  <!-- 위쪽 한 줄: 로고 중앙, 언어 오른쪽 -->
-  <div class="header-top-row">
-    <div class="logo-center">
-      <img alt="K&L Toolings 로고" src="logo.png"/>
-    </div>
+  <div class="header-bar-flex">
+    <!-- 왼쪽: 국가(언어) -->
     <div class="lang-switch-row">
       <a href="index.html" title="한국어">🇰🇷</a>
       <a href="en.html" title="English">🇺🇸</a>
       <a href="jp.html" title="日本語">🇯🇵</a>
     </div>
+    <!-- 중앙: 로고 -->
+    <div class="logo-center">
+      <img alt="K&L Toolings 로고" src="logo.png"/>
+    </div>
+    <!-- 오른쪽: 메뉴(햄버거) -->
+    <div class="menu-box">
+      <label class="menu-icon" for="menu-toggle" style="cursor:pointer;">☰</label>
+    </div>
   </div>
-
-  <!-- 메뉴(네비)는 로고/국기 아래 한 줄 중앙정렬 -->
+  <!-- 메뉴 토글 및 네비게이션은 아래에 -->
+  <input class="menu-toggle" id="menu-toggle" type="checkbox" style="display:none;"/>
   <nav class="main-nav">
     <ul class="nav-links">
       <li><a href="#about">회사소개</a></li>
@@ -120,7 +99,7 @@
       <li><a href="#contact">문의</a></li>
     </ul>
   </nav>
-</header>>
+</header>
 <!-- 회사소개 -->
 <section id="about" style="max-width:700px;margin:0 auto 2em auto;padding:1.5em;background:#f9fafd;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
 <h1 style="text-align:center;color:#1b2452;font-size:1.7em;font-weight:700;margin-bottom:0.8em;line-height:1.5;">
